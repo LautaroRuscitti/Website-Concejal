@@ -1,0 +1,615 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #1305dc,#ff00f2, #ff0044); /* Degradado suave de gris a azul claro */
+    background-size: 200% 200%; /* Aumenta el tamaño del fondo */
+    animation: gradient-animation 5s ease infinite; /* Añade la animación */
+    color: #333;
+    line-height: 1.6;
+}
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 0%; /* Comienza desde la esquina superior izquierda */
+    }
+    50% {
+        background-position: 100% 100%; /* Se mueve a la esquina inferior derecha */
+    }
+    100% {
+        background-position: 0% 0%; /* Regresa a la posición inicial */
+    }
+}
+.header {
+    background: linear-gradient(to bottom right, #ff0055,#3e0147, #1e00ff); /* Degradado suave */
+    background-size: 200% 200%;
+    animation: gradient-animation 5s ease infinite;
+    color: white;
+    padding: 10px 0; /* Reducir el padding para hacer el header más pequeño */
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 10px; /* Reducir el espacio horizontal */
+}
+
+.logo img {
+    width: 150px; /* Cambia el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción de aspecto */
+}
+
+
+.title {
+    font-size: 3.5rem; /* Reducir el tamaño del título */
+    background: linear-gradient(90deg, #fff, #ff0000, #3333ff, #fff);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-weight: bold;
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: 0%; }
+    50% { background-position: 100%; }
+    100% { background-position: 0%; }
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links li {
+    margin-left: 20px; /* Reducir la separación entre los elementos */
+}
+
+.nav-links li a {
+    font-size: 1rem; /* Reducir un poco el tamaño de los enlaces */
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 20px; /* Reducir el padding */
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.nav-links li a:hover {
+    box-shadow: 0 0 10px #ff0000, 0 0 20px #3333ff, 0 0 30px #ff0000;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px #ff0000, 0 0 20px #3333ff;
+    }
+    50% {
+        box-shadow: 0 0 20px #ff0000, 0 0 30px #3333ff;
+    }
+    100% {
+        box-shadow: 0 0 10px #ff0000, 0 0 20px #3333ff;
+    }
+}
+
+
+
+/* Estilos para la sección hero */
+.hero {
+    position: relative;
+    background: linear-gradient(to bottom right, #dd0606,#696969, #1500ff); /* Degradado suave de gris a azul claro */
+    background-size: 200% 200%; /* Aumenta el tamaño del fondo */
+    animation: gradient-animation 5s ease infinite; /* Añade la animación */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px; /* Espaciado interno */
+    text-align: center;
+}
+
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 0%; /* Comienza desde la esquina superior izquierda */
+    }
+    50% {
+        background-position: 100% 100%; /* Se mueve a la esquina inferior derecha */
+    }
+    100% {
+        background-position: 0% 0%; /* Regresa a la posición inicial */
+    }
+}
+
+.welcome-text h2 {
+    font-size: 5rem; /* Tamaño de fuente grande */
+    color: #3e0147; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    margin: 20px 0; /* Espaciado vertical */
+    background-image: url('path/to/your/texture.png'); /* Imagen de textura */
+    -webkit-background-clip: text; /* Clip para mostrar textura */
+    color: transparent; /* Hacer que el color del texto sea transparente */
+}
+
+
+
+
+.container {
+    display: flex; /* Disposición flex para la imagen y el texto */
+    flex-direction: row;
+    align-items: center; /* Alinear elementos verticalmente */
+    justify-content: center; /* Centrar elementos */
+    max-width: 1200px; /* Ancho máximo */
+    margin: auto; /* Centramos el contenedor */
+    gap: 40px; /* Espacio entre imagen y texto */
+    padding: 40px 20px; /* Espacio interno */
+}
+
+.profile-image {
+    flex: 0 0 200px; /* Ancho fijo para la imagen del perfil */
+}
+
+.profile-pic {
+    width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    border-radius: 50%; /* Imagen circular */
+    
+}
+
+.text-container {
+    max-width: 600px; /* Ancho máximo para el texto */
+}
+
+.important-text {
+    font-size: 1.2rem; /* Tamaño de fuente */
+    line-height: 1.6; /* Espaciado de línea */
+    font-style: italic; /* Estilo cursiva */
+    margin-bottom: 20px; /* Espacio inferior */
+    padding: 20px; /* Espacio interno */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    border-left: 4px solid #f8b400; /* Línea de borde */
+}
+
+.signature {
+    font-size: 1rem; /* Tamaño de firma */
+    font-weight: bold; /* Negrita */
+    text-align: right; /* Alinear a la derecha */
+}
+
+
+
+h1 {
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em; /* Tamaño de fuente del encabezado */
+    color: #34495e; /* Color del encabezado */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Header */
+.site-header {
+    background-color: #1e3d58;
+    color: white;
+    padding: 10px 0;
+    
+}
+
+.site-header .logo img {
+    width: 100px;
+}
+
+.site-header .navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.site-header .navbar ul li {
+    margin: 0 20px;
+}
+
+.site-header .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.site-header .navbar ul li a:hover {
+    color: #f8b400;
+}
+
+/* Sección de héroe */
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: white;
+    animation: fadeIn 2s;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Sección de valores */
+/* Sección de Frase Destacada */
+.frase-destacada {
+    padding: 40px 20px; /* Espacio interno */
+    text-align: center; /* Centrar contenido */
+    background: linear-gradient(to bottom right, #fb00ff,#1508c9, #ff0033); /* Degradado suave de gris a azul claro */
+    background-size: 200% 200%; /* Aumenta el tamaño del fondo */
+    animation: gradient-animation 5s ease infinite; /* Añade la animación */
+    border-radius: 12px; /* Bordes redondeados */
+    margin-bottom: 40px; /* Espacio debajo de la sección */
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 0%; /* Comienza desde la esquina superior izquierda */
+    }
+    50% {
+        background-position: 100% 100%; /* Se mueve a la esquina inferior derecha */
+    }
+    100% {
+        background-position: 0% 0%; /* Regresa a la posición inicial */
+    }
+}
+
+.vives-quote {
+    font-size: 4em; /* Tamaño de fuente grande */
+    font-family: 'Roboto', sans-serif; /* Cambia la tipografía */
+    background: linear-gradient(45deg, #ff6a00, #ee0979, #ff6a00, #ff6a00); /* Gradiente de color */
+    -webkit-background-clip: text; /* Clipping de fondo para texto */
+    -webkit-text-fill-color: transparent; /* Relleno de color transparente */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6); /* Sombra del texto más pronunciada */
+    margin: 0; /* Sin margen */
+    animation: pulse 2s infinite, bounce 1.5s infinite, color-change 5s infinite; /* Animaciones de pulso y rebote */
+    position: relative; /* Posicionamiento relativo para las comillas */
+}
+
+/* Estilo para las comillas */
+.vives-quote::before,
+.vives-quote::after {
+    content: '"'; /* Comillas */
+    font-size: 2em; /* Tamaño de las comillas */
+    color: #ffd700; /* Color dorado para las comillas */
+    position: absolute; /* Posicionamiento absoluto */
+    top: -0.5em; /* Ajuste de posición vertical */
+}
+
+/* Ajustar la posición de las comillas a la izquierda y derecha */
+.vives-quote::before {
+    left: -0.1em; /* Ajuste de posición horizontal */
+}
+
+.vives-quote::after {
+    right: -0.1em; /* Ajuste de posición horizontal */
+}
+
+/* Animaciones */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Sección de Valores */
+.Nustros-valores h2 {
+    font-size: 3.2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    border: 2px solid #ff0088;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+}
+.Nustros-valores h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    border-right: 3px solid #ff0088;
+    width: fit-content;
+    margin: 0 auto 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(30) infinite alternate;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+
+
+.valores {
+    background: linear-gradient(to bottom right,#033b60, #062663); /* Degradado suave de gris a azul claro */
+    padding: 60px 20px; /* Espaciado interior */
+    text-align: center; /* Centrar texto */
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 20px; /* Espacio entre columnas */
+}
+
+.valor {
+    background-color: #e9ecef; /* Color de fondo para cada valor */
+    padding: 20px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s; /* Transición suave */
+}
+
+.valor:hover {
+    transform: translateY(-5px); /* Efecto al pasar el mouse */
+}
+.valor img {
+    width: 180px; /* Imagen más grande */
+    transition: transform 0.5s ease; /* Transición suave */
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.valor:hover img {
+    transform: scale(1.3); /* Efecto de zoom al pasar el mouse */
+}
+
+.valor h3 {
+    font-size: 1.5em; /* Tamaño de fuente para el encabezado */
+}
+
+.color-eficiencia {
+    color: #3498db; /* Color azul para el título de eficiencia */
+}
+
+.color-gestion {
+    color: #27ae60; /* Color verde para el título de gestión */
+}
+
+.color-fiscalizacion {
+    color: #e74c3c; /* Color rojo para el título de fiscalización */
+}
+
+.valor p {
+    color: #555; /* Color del texto para la descripción */
+}
+
+/* Formulario de contacto */
+/* Estilos para la sección de contacto */
+.contact-title-container {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.contact-title {
+    font-size: 2.5em; /* Tamaño de fuente */
+    color: #fff; /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
+    animation: fadeIn 1s ease-in; /* Animación al aparecer */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.contacto {
+    display: flex; /* Posicionamiento relativo */
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    max-width: 800px; /* Limita el ancho del contenedor */
+    margin: 0 auto;
+    background: linear-gradient(to bottom right, #ff0055,#3e0147, #1e00ff); /* Degradado suave de gris a azul claro */
+    text-align: center; /* Centrar texto */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1); /* Oscurecimiento para contraste */
+    z-index: 1;
+}
+
+.welcome-text h2 {
+    font-size: 3rem; /* Tamaño de fuente grande */
+    color: #ffcc00; /* Color dorado */
+    text-align: center; /* Centrar el texto */
+    margin: 20px 0; /* Espaciado vertical */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.welcome-text h2:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+}
+
+
+/* Estilo del contenedor */
+.container {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; /* Centra el contenido */
+}
+
+/* Estilo del título del formulario */
+.contacto h2 {
+    color: #9a9595; /* Color del título */
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    
+}
+
+/* Estilo del formulario */
+#contact-form {
+    background: rgb(225, 224, 224); /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 40px; /* Espaciado interno */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo de grupos de formularios */
+.form-group {
+    margin-bottom: 0px; /* Espaciado inferior */
+    text-align: center; /* Alinear texto a la izquierda */
+}
+
+/* Estilo de etiquetas */
+.form-group label {
+    display: block; /* Hacer que la etiqueta ocupe toda la línea */
+    font-weight: bold; /* Negrita */
+    color: #555; /* Color de texto de etiquetas */
+    margin: 5px 0 5px; /* Espacio entre etiquetas y campos */
+}
+
+/* Estilo de entradas de texto y textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Ancho completo */
+    padding: 8px; /* Espaciado interior */
+    border: 1px solid #ced4da; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de fuente */
+    transition: border-color 0.3s; /* Transición de borde */
+}
+
+/* Cambios en el borde al enfocar */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff; /* Color del borde en foco */
+    outline: none; /* Sin contorno */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1em; /* Tamaño de la fuente */
+    background: rgba(255, 255, 255, 0.8); /* Fondo más claro para los campos */
+}
+
+/* Estilo del botón de enviar */
+.submit-btn {
+    background-color: #f08; /* Color de fondo del botón */
+    color: white; /* Color de texto */
+    border: none; /* Sin borde */
+    padding: 12px 20px; /* Espaciado interior */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1.2em; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor a puntero */
+    transition: background-color 0.3s; /* Transición de fondo */
+}
+
+/* Cambios en el fondo del botón al pasar el ratón */
+.submit-btn:hover {
+    background-color: #ca0dc1; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilo para el mensaje de respuesta */
+#response-message {
+    margin-top: 10px; /* Espaciado superior */
+    font-size: 1.2em; /* Tamaño de fuente */
+    text-align: center; /* Centrar el texto del mensaje de respuesta */
+    height: 40px; /* Altura fija para mantener el espacio */
+    color: #28a745; /* Color de texto */
+    transition: opacity 0.3s; /* Efecto de transición */
+}
+
+
+/* Footer */
+footer {
+    background-color: #1e3d58;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #f8b400;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}

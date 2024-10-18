@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concejal Alfonso - Página Oficial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="./images/logo.webp" alt="Logo Partido Republicano">
+            </div>
+            <h1 class="title">Partido Republicano</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#valores">Valores</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Sección Principal -->
+    <section id="inicio" class="hero">
+        <div class="overlay">
+            <div class="welcome-text">
+                <h2>Bienvenido a la Página Oficial de Alfonso</h2>
+            </div>
+            <div class="container">
+                <div class="profile-image">
+                    <img src="./images/alfonso.jpg" alt="Concejal Alfonso" class="profile-pic">
+                </div>
+                <div class="text-container">
+                    <blockquote class="important-text">
+                        "Como miembro del Partido Republicano, estoy comprometido con los valores de libertad y
+                        responsabilidad. Quiero ser concejal para escuchar a nuestra comunidad y trabajar en políticas
+                        que
+                        impulsen el desarrollo económico local y apoyen a las pequeñas empresas. Juntos, podemos
+                        construir
+                        un futuro mejor para todos."
+                    </blockquote>
+                    <p class="signature">— Alfonso</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección de Valores -->
+    <!-- Sección de Valores -->
+    <!-- Sección de Valores -->
+    <!-- Sección de Frase Destacada -->
+    <section id="frase-destacada" class="frase-destacada">
+        <blockquote class="vives-quote">Vives x Quillota</blockquote>
+    </section>
+
+    <!-- Sección de Valores -->
+    <section id="valores" class="valores">
+        <div class="Nustros-valores">
+        <h2>Nuestros Valores</h2>
+    </div>
+        <div class="container">
+            <div class="valores-grid">
+                <div class="valor">
+                    <img src="./images/eficacia.webp" alt="Eficiencia">
+                    <h3 class="color-eficiencia">Eficiencia</h3>
+                    <p>Nos esforzamos en lograr resultados con responsabilidad.</p>
+                </div>
+                <div class="valor">
+                    <img src="./images/gestion.webp" alt="gestion">
+                    <h3 class="color-gestion">Gestión</h3>
+                    <p>Trabajamos al servicio de nuestra comunidad.</p>
+                </div>
+                <div class="valor">
+                    <img src="./images/fiscalizacion.webp" alt="Fiscalizacion">
+                    <h3 class="color-fiscalizacion">Fiscalización</h3>
+                    <p>Supervisamos y promovemos cambios positivos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contacto">
+        
+        <div class="contact-title-container"> <!-- Div contenedor para el título -->
+            <h2 class="contact-title">Contáctanos</h2>
+        </div>
+        <div class="container">
+            
+            
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" placeholder="Ingrese su edad" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar</button>
+            </form>
+        </div>
+        <div id="response-message"></div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Concejal Alfonso. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
